@@ -3,41 +3,40 @@ package caixa;
 public class Application {
 
 	public static void main(String[] args) {
+		int linhas = 9;
+		int colunas = 9;
+		
 		//TOPO
-		for (int i=0; i< 9; i++) {
-			System.out.print("0");
-		}
-		System.out.println("");
+		horizontal(colunas);
 		
 		
 		//LATERAL
-		for (int i=0; i< 9; i++) {
-			System.out.print("0");
-			System.out.print("       ");
-			System.out.print("0");
-			System.out.println("");
-		}
+		vertical(linhas,colunas);
 		
 		//fim
+		horizontal(colunas);
 		
-		for (int i=0; i< 9; i++) {
-			System.out.print("0");
 	}
-	}
-	private static void horizontal() {
+	private static void horizontal(int colunas) {
 		for (int i=0; i< 9; i++) {
 			System.out.print("0");
 		}
 		System.out.print("");
 	}
 	
-	private static void vertical() {
+	private static void vertical(int linhas, int colunas) {
 		for (int i=0; i< 9; i++) {
 			System.out.print("0");
-			System.out.print("       ");
+			for(int x=0; x<colunas -2; x++)
+			{
+				System.out.print(" ");
+			}
 			System.out.print("0");
 			System.out.println("");
 		}
 		
 	}
-}
+
+	}
+
+
