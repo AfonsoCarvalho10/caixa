@@ -18,10 +18,26 @@ public class Application {
 			System.out.println("");
 		}
 		
-		//topo
+		//fim
 		
 		for (int i=0; i< 9; i++) {
 			System.out.print("0");
 	}
+	}
+	private static void horizontal() {
+		for (int i=0; i< 9; i++) {
+			System.out.print("0");
+		}
+		System.out.print("");
+	}
+	
+	private static void vertical() {
+		for (int i=0; i< 9; i++) {
+			System.out.print("0");
+			System.out.print("       ");
+			System.out.print("0");
+			System.out.println("");
+		}
+		
 	}
 }
